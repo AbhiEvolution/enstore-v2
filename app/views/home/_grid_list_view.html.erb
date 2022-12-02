@@ -1,0 +1,631 @@
+<div class="px-2 my-3">
+    <div class="fs-22 fw-500">Cakes Shop in Bangalore</div>
+    <div class="d-flex justify-content-between">
+        <div class="fs-18 fw-500 text-secondary">
+            Home > Cake
+        </div>
+        <div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Popularity
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center bg-secondary text-light"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rating<span class="rounded bg-light mx-1 text-secondary px-1">3</span>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class=" d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Distance
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Business
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="d-inline-flex fs-15 fw-400 text-secondary text-decoration-none">
+                Display
+                <span class="mx-1">
+                    <!-- <button  class="border-none bg-body" onclick="gridview()"> -->
+                    <button id="newGrid" class="myButton border-none bg-body">
+                        <%= image_tag 'view/grid-view.svg'%>
+                    </button>
+                </span>
+                <span class="mx-1">
+                    <!-- <button class="border-none bg-body" onclick="listview()"> -->
+                    <button id="newList" class="myButton border-none bg-body">
+                        <%= image_tag 'view/list-view.svg'%>
+                    </button>
+                </span>
+            </div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort by: Most Relevant
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<!-- <div id="grid"> -->
+<div id="createGrid" style="display: block">
+    <div class="row px-3 my-2">
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-1.jpg',class:'w-100' %>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2">BAKERY</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">S Baking Co</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%><span class=" f-g-color ps-1 mt-1">(5)</span></div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">Cake Shop - 43, 1, Agnipath Corner 123 A,
+                road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-2.jpg' ,class:'w-100'%>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2">PHARMACY</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">S Baking Co</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <span class=" f-g-color ps-1 mt-1">(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">Cake Shop - 43, 1, Agnipath Corner 123 A,
+                road phase 1, Civil Lines, Prayagraj.</div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-3.jpg' ,class:'w-100'%>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2"> ELECTRONICS</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">A.N. Electronics</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <span class=" f-g-color ps-1 mt-1">(11)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">Cake Shop - 43, 1, Agnipath Corner 123 A,
+                road phase 1, Civil Lines, Prayagraj.</div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-4.jpg' ,class:'w-100'%>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2">POULTRY</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">Ahm. Poultry Farm</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <span class=" f-g-color ps-1 mt-1">(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">CRJF+C7J, Noorullah Rd, GTB Nagar, Bangalore, Karnataka 560087
+            </div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row px-3 my-2">
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-1.jpg',class:'w-100' %>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2">BAKERY</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">S Baking Co</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%><span class=" f-g-color ps-1 mt-1">(5)</span></div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">Cake Shop - 43, 1, Agnipath Corner 123 A,
+                road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-2.jpg' ,class:'w-100'%>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2">PHARMACY</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">S Baking Co</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <span class=" f-g-color ps-1 mt-1">(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">Cake Shop - 43, 1, Agnipath Corner 123 A,
+                road phase 1, Civil Lines, Prayagraj.</div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-3.jpg' ,class:'w-100'%>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2"> ELECTRONICS</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">A.N. Electronics</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <span class=" f-g-color ps-1 mt-1">(11)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">Cake Shop - 43, 1, Agnipath Corner 123 A,
+                road phase 1, Civil Lines, Prayagraj.</div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+        <div class="col f-border p-3 m-1">
+            <div class="">
+                <%= image_tag 'home/featured/image-4.jpg' ,class:'w-100'%>
+            </div>
+            <div class="fs-12 fw-500 f-g-color py-2">POULTRY</div>
+            <div class="d-flex justify-content-between">
+                <div class="fs-18  fw-600">Ahm. Poultry Farm</div>
+                <div class=" "><%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <span class=" f-g-color ps-1 mt-1">(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 f-g-color my-2">CRJF+C7J, Noorullah Rd, GTB Nagar, Bangalore, Karnataka 560087
+            </div>
+            <div><span class="fw-700 text-success">Open</span> - Closes at 10:30 pm</div>
+            <div class="d-flex justify-content-between  my-2 py-3">
+                <div class="f-order-btn text-light p-2 fs-14 fw-600 text-center"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 text-center"> View Menu</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div id="list"> -->
+<div id="createList" style="display: none">
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-1.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-2.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-3.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-4.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-1.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-2.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-3.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex col lv-border mx-2 p-3 my-3">
+        <div class="flex-shrink-0">
+            <%= image_tag 'view/list/image-4.jpg' , class:'h-100'%>
+        </div>
+        <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-12 fw-500 grey-color">Bakery</div>
+                <div><%= image_tag 'view/list/forward-icon.svg'%></div>
+            </div>
+            <div class="d-flex justify-content-between my-1">
+                <div class="fs-20 fw-600">S Baking Co</div>
+                <div>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/yellow-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <%= image_tag 'icon/grey-star.svg'%>
+                    <span>(21)</span>
+                </div>
+            </div>
+            <div class="fs-14 fw-400 grey-color my-2">
+                Cake Shop - 43, 1, Sardar Patel Marg, Agnipath Colony, Loren road phase 1, Civil Lines, Prayagraj.
+            </div>
+            <div class="fs-14 fw-700 my-2">
+                <span class="text-success">Open</span> <span class="text-secondary">- Closes at 10:30 pm</span>
+            </div>
+            <div class="d-flex mt-3">
+                <div class=" f-order-btn text-light py-2 fs-14 fw-600 me-2 px-4"> Order Now</div>
+                <div class="f-menu-btn p-2 fs-14 fw-600 px-4"> View Menu</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    .dropdown-filter {
+        border: 1px solid #D8D8D8;
+        border-radius: 4px;
+    }
+
+    .rounded {
+        border-radius: 50%;
+    }
+
+
+    .f-border {
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+    }
+
+    .f-g-color {
+        color: #595959;
+    }
+
+    .f-order-btn {
+        background: #F1623F;
+        border-radius: 6px;
+    }
+
+    .f-menu-btn {
+        background: #FFFFFF;
+        border: 1px solid #D8D8D8;
+        border-radius: 6px;
+        color: #FF5B5A;
+    }
+
+    .dropdown-filter {
+        border: 1px solid #D8D8D8;
+        border-radius: 4px;
+    }
+
+    .rounded {
+        border-radius: 50%;
+    }
+
+    .f-border {
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+    }
+
+    .f-g-color {
+        color: #595959;
+    }
+
+    .f-order-btn {
+        background: #F1623F;
+        border-radius: 6px;
+        width: 132px;
+        height: 38px;
+    }
+
+    .f-menu-btn {
+        background: #FFFFFF;
+        border: 1px solid #D8D8D8;
+        border-radius: 6px;
+        color: #FF5B5A;
+        width: 132px;
+        height: 38px;
+    }
+
+    .lv-border {
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+    }
+
+    .grey-color {
+        color: #595959;
+    }
+
+    .border-none {
+        border: none;
+    }
+</style>
+<script>
+    // function gridview() {
+    //     var x = document.getElementById("grid");
+    //     if (x.style.display === "none") {
+    //         x.style.display = "block";
+    //     } else {
+    //         x.style.display = "none";
+    //     }
+    // }
+    // function listview() {
+    //     var y = document.getElementById("list");
+    //     if (y.style.display === "none") {
+    //         y.style.display = "block";
+    //     } else {
+    //         y.style.display = "none";
+    //     }
+    // }
+    $('.myButton').click(function () {
+        $('div[id^=create]').hide(); //hide all
+        var id = $(this).attr('id'); //get the id of the clicked button
+        var end = id.slice(-2);      //get last 2 character (LD/VC/FD) from id
+        $(`div[id$=${end}]`).show(); //match the div with id ends with the character and show
+    });
+</script>

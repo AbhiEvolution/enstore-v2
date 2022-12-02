@@ -1,0 +1,31 @@
+.banner-home {
+  background-image: url("home/banner/banner.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10%;
+  padding-bottom: 15%;
+}
+
+.grocery-1 {
+  background-image: url("home/grocery/image-2.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grocery-2 {
+  background-image: url("home/grocery/image-1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grocery-bg-color {
+  background: rgba(96, 94, 94, 0.39);
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 2%;
+}

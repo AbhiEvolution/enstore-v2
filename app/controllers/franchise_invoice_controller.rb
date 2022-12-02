@@ -1,0 +1,2 @@
+class FranchiseInvoiceController < ApplicationController
+end

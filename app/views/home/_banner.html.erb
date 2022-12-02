@@ -1,0 +1,46 @@
+<div class="banner-home text-center">
+    <div class="fs-48 text-light fw-700">
+        Find & Shop in your Neighborhood Stores
+    </div>
+    <div class="d-flex justify-content-center mt-3  align-items-center ">
+        <div class="dropdown">
+            <button class="dropdown-btn  dropdown-toggle px-3 py-2 text-light fs-16 fw-500" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <%= image_tag 'logo/location.svg',class:'pe-1'%> Pincode/City
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <form action="/">
+            <input type="text"class="banner-input"  name="query">
+            <input type="submit" hidden /> 
+        </form>
+    </div>
+</div>
+<style>
+    .dropdown-toggle::after {
+        border: none;
+    }
+
+    .dropdown-btn {
+        background-color: #F1633F;
+        border: 1px solid #F1633F;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .banner-input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 100%;
+        padding: 0.53rem;
+        outline: none;
+    }
+</style>

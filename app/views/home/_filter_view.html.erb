@@ -1,0 +1,106 @@
+<div class="px-2 my-3">
+    <div class="fs-22 fw-500">Cakes Shop in Bangalore</div>
+    <div class="d-flex justify-content-between">
+        <div class="fs-18 fw-500 text-secondary">
+            Home > Cake
+        </div>
+        <div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Popularity
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center bg-secondary text-light"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Rating<span class="rounded bg-light mx-1 text-secondary px-1">3</span>
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class=" d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Distance
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Business
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="d-inline-flex fs-15 fw-400 text-secondary text-decoration-none">
+                Display
+                <span class="mx-1">
+                    <%#= form_with url: "/home/view", method: :get do |form| %>
+                    <%#= form.hidden_field :view_type , value:'grid'%>
+                    <%#= form.submit "grid"%>
+                    <%# end %>
+                    <button onclick="gridview()">
+                        <%= image_tag 'view/grid-view.svg'%>
+                    </button>
+
+                </span>
+                <span class="mx-1">
+                    <%= form_with url: "/home/view", method: :get do |form| %>
+                    <%= form.hidden_field :view_type , value:'list'%>
+                    <%= form.submit "list"%>
+                    <% end %>
+                    <%#= image_tag 'view/list-view.svg'%>
+                </span>
+
+            </div>
+            <div class="d-inline-flex dropdown">
+                <a class="dropdown-toggle fs-15 fw-400 text-secondary text-decoration-none dropdown-filter px-2 py-1 text-center"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Sort by: Most Relevant
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+<script>
+    function gridview() {
+        {
+            var x = document.getElementById("grid");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    }
+</script>

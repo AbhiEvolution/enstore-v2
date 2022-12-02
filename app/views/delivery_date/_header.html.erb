@@ -1,0 +1,401 @@
+<div class="header-shadow pb-2">
+    <div class="bg-green py-2">
+        <div class="d-flex justify-content-around">
+            <div class=" fs-14 fw-400">
+                <a href="#" class="text-light">
+                    Get the App:
+                </a>
+                <%= image_tag 'delivery/icon/app-icon.svg'%>
+                <%= image_tag 'delivery/icon/apple-icon.svg'%>
+                <a href="#" class="text-light"> Follow us on:</a>
+                <%= image_tag 'delivery/icon/facebook-icon.svg'%>
+                <%= image_tag 'delivery/icon/twitter-icon.svg'%>
+                <%= image_tag 'delivery/icon/instagram-icon.svg'%>
+                <%= image_tag 'delivery/icon/youtube-icon.svg'%>
+                <a href="#" class="text-light">
+                    Download OTPxpress App and get 10% off on your first order
+                </a>
+            </div>
+            <div class="text-light fs-14 fw-400">
+                Shared Catalog
+                Offers
+                +91 9898981212
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-around my-2">
+        <div class=" align-items-center ">
+            <%= image_tag 'delivery/header/header_logo_delivery.svg'%>
+        </div>
+        <div class="d-flex justify-content-center align-items-center ">
+            <div class="dropdown  bg-green py-1 px-2  br-6">
+                <a class=" dropdown-toggle text-light text-decoration-none" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <%=image_tag 'delivery/header/location-icon.svg'%>
+                    <span class="fs-14 fw-400">Jayesh Colony</span><br>
+                    <span class="fs-16 fw-400">(Work) 221, Outer Ring R..</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="dropdown">
+                <a class=" dropdown-toggle text-dark text-decoration-none search-dropdown" href="#" role="button"
+                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="fs-20 px-2">All</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+            <form action="/">
+                <input type="text" class="px-4" name="query" placeholder="Search">
+                <button class="search-button"><%=image_tag 'delivery/header/search-icon.svg'%></button>
+            </form>
+        </div>
+        <div class="d-flex justify-content-center align-items-center ">
+            <div class="dropdown">
+                <a class=" dropdown-toggle bg-green text-decoration-none text-light br-10 py-2 px-4" href="#"
+                    role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex align-items-center bg-red  px-3" style="border-radius:50% ;">
+            <button class="cart-btn bg-red" onclick="openNav()"><%= image_tag 'delivery/header/cart-icon.svg'%></button>
+        </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center my-2">
+        <div class="d-flex header-box p-1 mx-1">
+            <div class="flex-shrink-0">
+                <%= image_tag 'delivery/header/image-1.jpg'%>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <div>
+                    Fresh
+                </div>
+                <div>
+                    Vegetable
+                </div>
+            </div>
+        </div>
+        <div class="d-flex header-box p-1 mx-1">
+            <div class="flex-shrink-0">
+                <%= image_tag 'delivery/header/image-2.jpg'%>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <div>
+                    Fresh
+                </div>
+                <div>
+                    Fruits
+                </div>
+            </div>
+        </div>
+        <div class="d-flex header-box p-1 mx-1">
+            <div class="flex-shrink-0">
+                <%= image_tag 'delivery/header/image-3.jpg'%>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <div>
+                    Grocery &
+                </div>
+                <div>
+                    Staples
+                </div>
+            </div>
+        </div>
+        <div class="d-flex header-box p-1 mx-1">
+            <div class="flex-shrink-0">
+                <%= image_tag 'delivery/header/image-4.jpg'%>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <div>
+                    Breakfast &
+                </div>
+                <div>
+                    Dairy
+                </div>
+            </div>
+        </div>
+        <div class="d-flex header-box p-1 mx-1">
+            <div class="flex-shrink-0">
+                <%= image_tag 'delivery/header/image-5.jpg'%>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <div>
+                    Household
+                </div>
+                <div>
+                    Items
+                </div>
+            </div>
+        </div>
+        <div class="d-flex header-box p-1 mx-1">
+            <div class="flex-shrink-0">
+                <%= image_tag 'delivery/header/image-6.jpg'%>
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <div>
+                    Biscuit &
+                </div>
+                <div>
+                    Chocolate
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        float: left;
+    }
+
+    .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #111;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+    }
+
+    .openbtn:hover {
+        background-color: #444;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 16px;
+    }
+
+    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+    @media screen and (max-height: 450px) {
+        .sidebar {
+            padding-top: 15px;
+        }
+
+        .sidebar a {
+            font-size: 18px;
+        }
+    }
+</style>
+
+
+<div id="mySidebar" class="sidebar">
+    <a href="#" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
+
+
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+
+
+<!-- <div class="container testimonial-group my-2">
+        <div class="row">
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-1.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-2.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-3.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-4.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-5.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-6.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-7.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                        <div>fresh</div>
+                        <div>Vegetable</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 header-box ">
+                <div class="d-flex pt-1">
+                    <div>
+                        <%= image_tag 'delivery/header/image-8.jpg'%>
+                    </div>
+                    <div class="ms-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+<style>
+    .testimonial-group>.row {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .testimonial-group>.row>.col-3 {
+        display: inline-block;
+    }
+
+    .bg-green {
+        background-color: #53900F;
+    }
+
+    .green {
+        color: #53900F;
+    }
+
+    .header-box {
+        background: #FFFFFF;
+        border: 1px solid #ECECEC;
+        border-radius: 6px;
+    }
+
+    .header-shadow {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+    }
+
+    .search-dropdown {
+        background: #FFFFFF;
+        border: 1px solid #A7A6A6;
+        border-radius: 6px 0px 0px 6px;
+        padding-top: 6px;
+        padding-left: 10px;
+        padding-bottom: 4px;
+        padding-right: 4px;
+    }
+
+    .search-button {
+        float: right;
+        background: #53900F;
+        border-radius: 0px 6px 6px 0px;
+    }
+
+    .bg-red {
+        background-color: #EF4129;
+    }
+
+    .cart-btn {
+        border: none;
+    }
+</style>

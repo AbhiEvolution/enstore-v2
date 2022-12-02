@@ -1,0 +1,401 @@
+<!-- <div class="d-flex justify-content-center text-center pt-3">
+    <div class="white-box mx-1">
+        <div class="fs-16 fw-600 text-danger">
+            Happy Users
+        </div>
+        <div class="fs-40 fw-500">
+            30+ M
+        </div>
+    </div>
+    <div class="white-box mx-1">
+        <div class="fs-16 fw-600 text-danger">
+            Industry
+        </div>
+        <div class="fs-40 fw-500">
+            120+
+        </div>
+    </div>
+    <div class="white-box mx-1">
+        <div class="fs-16 fw-600 text-danger">
+            Categories
+        </div>
+        <div class="fs-40 fw-500">
+            200+
+        </div>
+    </div>
+</div> -->
+
+<div class="banner-home text-center">
+    <div class="fs-48 text-light fw-700">
+        Find & Shop in your Neighborhood Stores
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <div class="dropdown">
+            <button class="dropdown-btn  dropdown-toggle px-3 py-2 text-light fs-16 fw-500" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <%= image_tag 'logo/location.svg',class:'pe-1'%> Pincode/City
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <form action="/">
+            <input type="text" class="banner-input" name="query">
+            <input type="submit" hidden />
+        </form>
+    </div>
+</div>
+<div class="px-3 my-3">
+    <div class="row">
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-2.jpg'%></div>
+            <div>Dairy & Groceries</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-3.jpg'%></div>
+            <div>Meat</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-10.jpg'%></div>
+            <div>Food</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-5.jpg'%></div>
+            <div>Fashion</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-6.jpg'%></div>
+            <div>Kitchen Appliances</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-7.jpg'%></div>
+            <div>Medicine</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-8.jpg'%></div>
+            <div>Gym Equipments</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-4.jpg'%></div>
+            <div>Electronics</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-9.jpg'%></div>
+            <div>Liquor</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-11.jpg'%></div>
+            <div>Jewellery</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-12.jpg'%></div>
+            <div>Furniture</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-13.jpg'%></div>
+            <div>Home Decor</div>
+        </div>
+    </div>
+    <div class="row row-cols-auto">
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-14.jpg'%></div>
+            <div>Beauty</div>
+        </div>
+        <div class="col text-center">
+            <div><%= image_tag 'home/logo/image-15.jpg'%></div>
+            <div>Footwear</div>
+        </div>
+    </div>
+</div>
+<!-- <div class="px-3 my-3">
+    <div class="fs-38 fw-600">Popular Business</div>
+    <div class="row">
+        <div class="col p-border py-3 mx-2">
+            <div class="d-flex justify-content-evenly">
+                <div class="img-fluid"><%= image_tag 'home/popular/image-10.jpg', class:'h-100 w-100'%></div>
+                <div class="px-2">
+                    <div class="fs-22 fw-500">Baby Care</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Order Online</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Top Rated</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Multi Cusines</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Dine In</div>
+                    <div class="fs-14 fw-400 text-danger py-1">More...</div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-border py-3 mx-2">
+            <div class="d-flex  justify-content-evenly">
+                <div><%= image_tag 'home/popular/image-11.jpg', class:'h-100 w-100'%></div>
+                <div class="px-2">
+                    <div class="fs-22 fw-500">Fashion
+                    </div>
+                    <div class="fs-22 fw-500">
+                        Accessories</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Laptops</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Repair/Parts</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Services</div>
+                    <div class="fs-14 fw-400 text-danger py-1">More...</div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-border py-3 mx-2">
+            <div class="d-flex justify-content-evenly">
+                <div><%= image_tag 'home/popular/image-12.jpg', class:'h-100 w-100'%></div>
+                <div class="px-2">
+                    <div class="fs-22 fw-500">Meat</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Order Online</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Top Rated</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Multi Cusines</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Dine In</div>
+                    <div class="fs-14 fw-400 text-danger py-1">More...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-2">
+        <div class="col p-border py-3 mx-2">
+            <div class="d-flex justify-content-evenly">
+                <div class="img-fluid"><%= image_tag 'home/popular/image-13.jpg', class:'h-100 w-100'%></div>
+                <div class="px-2">
+                    <div class="fs-22 fw-500">Clothing</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Garmets</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Top Rated</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Fabrics</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Tailored</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Services</div>
+                    <div class="fs-14 fw-400 text-danger py-1">More...</div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-border py-3 mx-2">
+            <div class="d-flex  justify-content-evenly">
+                <div><%= image_tag 'home/popular/image-14.jpg', class:'h-100 w-100'%></div>
+                <div class="px-2">
+                    <div class="fs-22 fw-500">Bakery</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Order Online</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Top Rated</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Multi Cusines</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Dine In</div>
+                    <div class="fs-14 fw-400 text-danger py-1">More...</div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-border py-3 mx-2">
+            <div class="d-flex justify-content-evenly">
+                <div><%= image_tag 'home/popular/image-15.jpg', class:'h-100 w-100'%></div>
+                <div class="px-2">
+                    <div class="fs-22 fw-500">Meat</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Vegetables</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Spices</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Home Delivery</div>
+                    <div class="fs-16 fw-400 pas-color py-1">Curbside</div>
+                    <div class="fs-14 fw-400 text-danger py-1">More...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="px-3 my-3">
+    <div class="fs-38 fw-600">Popular Business</div>
+    <div class="row">
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-7.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Restaurant & Cloud Kitchen</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-8.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Liquor</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-9.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Pharmacy</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="px-3 my-3">
+    <div class="fs-38 fw-600">Groceries and Meat</div>
+    <div class="row">
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-4.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Groceries</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-5.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Meat & Poultry</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-6.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Dairy & Bakery</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="px-3 my-3">
+    <div class="fs-38 fw-600">Popular Business</div>
+    <div class="row">
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-1.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Mobiles & laptops</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-2.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Hardware & Software Solutions</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+        <div class="col text-center">
+            <div class="p-shadow">
+                <div> <%= image_tag 'home/popular/image-3.jpg', class:'w-100'%></div>
+                <div class="fs-18 fw-600 p-2">Repair</div>
+                <div class="d-flex justify-content-between">
+                    <div class="p-2 text-secondary fs-16">120+</div>
+                    <div class="p-2 text-danger fs-16">Explore ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="deliver-background mx-3 text-center py-2">
+    <div class=" text-danger fs-26  fw-600">We deliver to</div>
+    <div class="row fs-18 fw-400 my-2">
+        <div class="col">Banshankari</div>
+        <div class="col">Kormangala</div>
+        <div class="col">Indiranagar</div>
+        <div class="col">Kormangala</div>
+        <div class="col">Sarjapur</div>
+        <div class="col">Kormangala</div>
+    </div>
+    <div class="row fs-18 fw-400 my-2">
+        <div class="col">JP Nagar</div>
+        <div class="col">Majestic</div>
+        <div class="col">JP Nagar</div>
+        <div class="col">Sarjapur</div>
+        <div class="col">JP Nagar</div>
+        <div class="col">Mullur</div>
+    </div>
+    <div class="row fs-18 fw-400 my-2">
+        <div class="col">GT Road</div>
+        <div class="col">GT Road</div>
+        <div class="col">Church Street</div>
+        <div class="col">Hoodi</div>
+        <div class="col">Koramangala</div>
+        <div class="col">GT Road</div>
+    </div>
+    <div class="row fs-18 fw-400 my-2">
+        <div class="col">Cubbon Park</div>
+        <div class="col">Sarjapur</div>
+        <div class="col">JP Nagar</div>
+        <div class="col">Bannerghatta</div>
+        <div class="col">Begur</div>
+        <div class="col">Varthur</div>
+    </div>
+    <div class="row fs-18 fw-400 my-2">
+        <div class="col">JP Nagar</div>
+        <div class="col">Lalbagh</div>
+        <div class="col">Banaswadi</div>
+        <div class="col">JP Nagar</div>
+        <div class="col">JP Nagar</div>
+        <div class="col">Jigani</div>
+    </div>
+
+</div>
+
+<style>
+    .p-shadow {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+    }
+
+    .p-border {
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        border-radius: 4px;
+    }
+
+    .white-box {
+        background: #FFFFFF;
+        border: 1px solid #E6E6E6;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.04);
+        border-radius: 12px;
+        padding: 1rem;
+    }
+
+    .deliver-background {
+        background-color: #FDF9F5;
+    }
+
+    .dropdown-toggle::after {
+        border: none;
+    }
+
+    .dropdown-btn {
+        background-color: #F1633F;
+        border: 1px solid #F1633F;
+        /* border-radius: 5px; */
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .banner-input {
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: hidden;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 100%;
+        padding: 0.53rem;
+        outline: none;
+    }
+</style>
